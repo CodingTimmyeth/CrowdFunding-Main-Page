@@ -23,6 +23,11 @@ header{
     background: linear-gradient(to top, lightgray, white);
 }
 
+/* Close Modal Hover Styling */
+svg{
+    color: #fff;
+}
+  
 /* Hamburger Styling */
 .open{
     display: block;
@@ -37,7 +42,7 @@ header{
 
 /* Second || Donation Menu */
 
-#project-donation-menu{
+#modal-menu{
     width: 327px;
 }
 #con-one{
@@ -48,7 +53,86 @@ input[type="radio"] {
   transform: scale(1.5);
 }
 
+/* Thank You Page */
+#thankYou{
+    width: 328px;
+}
+
 /* When Active */
 .active{
     border-color: hsl(176, 50%, 47%);
+}
+
+/* When Failed */
+.red{
+    border-color: red;
+}
+#errMessage{
+    margin-right: 10px;
+    font-style: italic;
+    font-size: 10px;
+}
+
+/* Overlay */
+.overlay{
+    position: fixed;
+    background-color: black;
+    opacity: .5;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 150%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+}
+.overlay-two{
+    position: fixed;
+    background-color: black;
+    opacity: .5;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 150%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+}
+.overlay-three{
+    position: fixed;
+    background-color: black;
+    opacity: .5;
+    z-index: 40;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 150%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+}
+
+/* Desktop Design */
+#desktop-menu{
+    width: 350px;
+}
+
+@media (min-width: 976px) {
+    header{
+        height: 550px;
+    }
+  #bg-image{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0)), url('/images/image-hero-desktop.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+  #main-container{
+    width: 730px;
+  }
+  #modal-menu{
+    width: 738px;
+  }
+  #thankYou{
+    width: 479px;
+  }
 }
